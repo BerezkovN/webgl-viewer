@@ -18,13 +18,12 @@ const webExtensionConfig = {
 	target: 'webworker', // extensions run in a webworker context
 	entry: {
 		'extension': './src/web/extension.ts',
+		'tutorial': './src/web/tutorial/tutorial1.js',
 		'test/suite/index': './src/web/test/suite/index.ts'
 	},
 	output: {
-		filename: '[name].js',
+		filename: '[name].bundle.js',
 		path: path.join(__dirname, './dist/web'),
-		libraryTarget: 'commonjs',
-		devtoolModuleFilenameTemplate: '../../[resource-path]'
 	},
 	resolve: {
 		mainFields: ['browser', 'module', 'main'], // look for `browser` entry point in imported node modules

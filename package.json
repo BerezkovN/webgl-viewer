@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "webgl-viewer.helloWorld",
-        "title": "Hello World"
+        "command": "webgl-viewer.runWebgl",
+        "title": "Run WebGL"
       }
     ]
   },
